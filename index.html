@@ -1,144 +1,310 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
+<html>
+    <head>
+		<title>Viper Consulting</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <link rel="stylesheet" href="custom.css" type="text/css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <style>
+    .w3-lobster {
+    font-family: "Lobster", serif;
+    }
+</style>
+    </head>
+    <body style = "zoom: 90%" data-spy="scroll" data-target=".navbar" data-offset="50">
+        <nav class="navbar-fixed-top navbar navbar-inverse">
+            <div class="container-fluid">
+                <div style = "margin-right:100px" class="navbar-header">
+                <a class="navbar-brand" href="#">Viper Consulting</a>
+                </div>
+                <ul class="nav navbar-nav">
+                <li style = "margin-right:50px" class="active"><a href="#AboutUs">About Us</a></li>
+                <li style = "margin-right:50px"><a href="#Client">Client</a></li>
+                <li style = "margin-right:50px"><a href="#ClientProject">Client Project Introduction</a></li>
+                <li style = "margin-right:50px"><a href="#Documents">Documents</a></li>
+                <li style = "margin-right:50px"><a href="#ContactUs">Contact Us</a></li>
+                <li style = "margin-right:50px"><a href="#OurTeam">Our Team</a></li>
+                </ul>
+            </div>
+        </nav>
+    <div class="w3-content w3-container" style="max-width:1050px;margin-top:80px;margin-bottom:80px">
+    <div class="w3-section">
+    <h1 style = "margin-bottom:30px" class = "w3-lobster w3-center w3-xxxlarge"> <b>Viper Consulting</b></h1>
+  </div>
 
-    <title>STANLEY - Free Bootstrap Theme </title>
+  <!-- Slideshow -->
+  <div class="w3-animate-opacity w3-display-container mySlides">
+    <img src="./GroupPic01.JPG" style="width:100%;height: 400px">
+  </div>
+  <div class="w3-animate-opacity w3-display-container mySlides">
+    <img src="./GroupPic02.JPG" style="width:100%;height: 400px">
+  </div>
+  <div class="w3-animate-opacity w3-display-container mySlides">
+    <img src="http://www.uvic.ca/assets2012/images/photos/billboards-34/2016/home-uvic-edge-2016.jpg" style="width:100%;height: 400px">
+  </div>
 
-    <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
+  <!-- Slideshow next/previous buttons -->
+  <div class="w3-container w3-dark-grey w3-padding-8 w3-xlarge" style = "height:35px">
+    <div class="w3-left" onclick="plusDivs(-1)"><i class="fa fa-arrow-circle-left w3-hover-text-teal"></i></div>
+    <div class="w3-right" onclick="plusDivs(1)"><i class="fa fa-arrow-circle-right w3-hover-text-teal"></i></div>
 
-
-    <!-- Custom styles for this template -->
-    <link href="assets/css/main.css" rel="stylesheet">
-
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="assets/js/hover.zoom.js"></script>
-    <script src="assets/js/hover.zoom.conf.js"></script>
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
-  </head>
-
-  <body>
-
-    <!-- Static navbar -->
-    <div class="navbar navbar-inverse navbar-static-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html">STANLEY</a>
-        </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="work.html">Work</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
+    <div class="w3-center">
+      <span style = "height:15px;margin-bottom:5px" class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+      <span style = "height:15px;margin-bottom:5px" class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+      <span style = "height:15px;margin-bottom:5px" class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
     </div>
+  </div>
+        <div class="section" >
+            <div class="container" id = "AboutUs">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="text-primary">About Us</h1>
+                        <hr class = "style18">
+                        <p style = "text-align: justify; text-justify: inter-word" class = "w3-large">
+                            Viper Consulting is a team of dedicated systems analysts and developers in the Health Information Science and Computer Science programs at the University of Victoria. Our interests as a group include vitalizing health-related systems and creating innovative solutions to any challenges your organization might be facing. Viper Consulting is dedicated to providing high-quality enrichment to the systems in your organization, as well as providing you with necessary resources to maintain a more efficient workflow.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-	<!-- +++++ Welcome Section +++++ -->
-	<div id="ww">
-	    <div class="container">
-			<div class="row">
-				<div class="col-lg-8 col-lg-offset-2 centered">
-					<img src="assets/img/user.png" alt="Stanley">
-					<h1>Hi, I am Stanley!</h1>
-					<p>Hello everybody. I'm Stanley, a free handsome bootstrap theme coded by BlackTie.co. A really simple theme for those wanting to showcase their work with a cute & clean style.</p>
-					<p>Please, consider to register to <a href="http://eepurl.com/IcgkX">our newsletter</a> to be updated with our latest themes and freebies. Like always, you can use this theme in any project freely. Share it with your friends.</p>
+        <div class="section" >
+            <div class="container" id = "Client">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="text-primary">Client</h1>
+                        <hr class = "style18">
+                        <p style = "text-align: justify; text-justify: inter-word" class = "w3-large">
+							Our client is the St. Jude's Anglican Home, a nursing home for elderly citizens in
+							Vancouver. It features 2 floors with a total of 55 beds in 45 rooms, including a couple
+							private rooms. It is a non profit nursing home primarily funded by Vancouver Coastal Health,
+							but user fees and donations also go towards taking care of the home and its citizens.
 
-				</div><!-- /col-lg-8 -->
-			</div><!-- /row -->
-	    </div> <!-- /container -->
-	</div><!-- /ww -->
+							St. Jude's Anglican Home has existed since 1948, evolving with the years and is now a
+							successful modern nursing home fit for any elderly citizen to stay, with citizens requiring
+							more specialized care to be admitted into "Extended Care" for more detailed care.
 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-	<!-- +++++ Projects Section +++++ -->
+        <div class="section" >
+            <div class="container" id = "ClientProject">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="text-primary">St. Jude's Anglican Home's Request</h1>
+                        <hr class = "style18">
+                        <p style = "text-align: justify; text-justify: inter-word" class = "w3-large">
 
-	<div class="container pt">
-		<div class="row mt centered">
-			<div class="col-lg-4">
-				<a class="zoom green" href="work01.html"><img class="img-responsive" src="assets/img/portfolio/port01.jpg" alt="" /></a>
-				<p>APE</p>
-			</div>
-			<div class="col-lg-4">
-				<a class="zoom green" href="work01.html"><img class="img-responsive" src="assets/img/portfolio/port02.jpg" alt="" /></a>
-				<p>RAIDERS</p>
-			</div>
-			<div class="col-lg-4">
-				<a class="zoom green" href="work01.html"><img class="img-responsive" src="assets/img/portfolio/port03.jpg" alt="" /></a>
-				<p>VIKINGS</p>
-			</div>
-		</div><!-- /row -->
-		<div class="row mt centered">
-			<div class="col-lg-4">
-				<a class="zoom green" href="work01.html"><img class="img-responsive" src="assets/img/portfolio/port04.jpg" alt="" /></a>
-				<p>YODA</p>
-			</div>
-			<div class="col-lg-4">
-				<a class="zoom green" href="work01.html"><img class="img-responsive" src="assets/img/portfolio/port05.jpg" alt="" /></a>
-				<p>EMPERORS</p>
-			</div>
-			<div class="col-lg-4">
-				<a class="zoom green" href="work01.html"><img class="img-responsive" src="assets/img/portfolio/port06.jpg" alt="" /></a>
-				<p>CHIEFS</p>
-			</div>
-		</div><!-- /row -->
-	</div><!-- /container -->
-
-
-	<!-- +++++ Footer Section +++++ -->
-
-	<div id="footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-4">
-					<h4>My Bunker</h4>
-					<p>
-						Some Address 987,<br/>
-						+34 9054 5455, <br/>
-						Madrid, Spain.
-					</p>
-				</div><!-- /col-lg-4 -->
-
-				<div class="col-lg-4">
-					<h4>My Links</h4>
-					<p>
-						<a href="#">Dribbble</a><br/>
-						<a href="#">Twitter</a><br/>
-						<a href="#">Facebook</a>
-					</p>
-				</div><!-- /col-lg-4 -->
-
-				<div class="col-lg-4">
-					<h4>About Stanley</h4>
-					<p>This cute theme was created to showcase your work in a simple way. Use it wisely.</p>
-				</div><!-- /col-lg-4 -->
-
-			</div>
-
-		</div>
-	</div>
+							St. Jude's Anglican Home has requested the help of our company to assist them in creating and
+							designing a system that will help them ensure patient safety upon delivering food. Over the years,
+							the nursing staff have become familiar with the patients in the nursing home, and are familiar with what
+							each patient is capable of. Unfortunately, when a regular staff member goes on leave, they are replaced
+							with a casual nurse, who may not know this information, leading to potentially dangerous situations regarding
+							allergies and ability to chew and swallow. Thus, St. Jude's has asked us to think of a method or system
+							to be implemented to make sure that all nurses who deliver food are aware of every patient's personal
+							and medical needs, regardless of whether or not they are familiar with the patient. This will allow them
+							to ensure the utmost quality when it comes to patient safety.
 
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="assets/js/bootstrap.min.js"></script>
-  </body>
+                        </p>
+                    </div>
+                    <!--
+                    <div class="col-md-6">
+                        <p>Client Project - Relevant Image</p>
+                    </div>
+                    -->
+                </div>
+            </div>
+        </div>
+        <div class="section" >
+            <div class="container" id = "Documents">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="text-primary">Documents</h1>
+                        <hr class = "style18">
+                            <p><a style = "cursor:pointer" class = "w3-large" onclick = "openDoc('https://csc3752016.github.io/group3/RFPGroup3.pdf')"><i class="fa fa-file" aria-hidden="true"></i> <b style = " text-decoration: underline">Request For Proposal</b></a></p>
+                            <p><a style = "cursor:pointer" class = "w3-large" onclick = "openDoc('https://csc3752016.github.io/group3/client interview notes.pdf')"><i class="fa fa-file" aria-hidden="true"></i> <b style = " text-decoration: underline">Elicitation Minutes</b></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" >
+            <div class="container" id = "ContactUs">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="text-primary">Contact Us</h1>
+                        <hr class = "style18">
+                        <p class = "w3-large" >Team Email: <b>csc3752016group3@gmail.com</b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <div class="section" >
+            <div class="container" id = "OurTeam">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="text-primary">Our Team</h1>
+                        <hr class = "style18">
+
+                    </div>
+                    <div class="col-md-6">
+                        <div class="w3-card-4" style = "margin-bottom:30">
+                        <img src="http://pingendo.github.io/pingendo-bootstrap/assets/user_placeholder.png" style="padding-left:90px;width:80%; height:250px">
+                            <div style = "height:250px" class="w3-container">
+                                <h3 class = "w3-center">Devon Fang</h3>
+                                <p class="w3-center w3-opacity">Web Developer, Editor</p>
+
+                            </div>
+                        </div>
+                        <div class="w3-card-4" style = "margin-bottom:30">
+                        <img src="Todd.jpg" style="padding-left:90px;width:80%; height:250px">
+                            <div style = "height:250px" class="w3-container">
+                                <h3 class = "w3-center">Todd Xu</h3>
+                                <p class="w3-center w3-opacity">Web Developer, Analyst</p>
+                                <p>Todd is a fourth year student major in computer science and minor in political science at University of Victoria. He has learned only two things from this two subjects: how to use Microsoft Word, why two states which have McDonald’s franchises will not go to war with each other.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="w3-card-4" style = "margin-bottom:30">
+                        <img src="Maston.jpg" style="padding-left:90px;width:80%; height:250px">
+                            <div style = "height:250px" class="w3-container">
+                                <h3 class = "w3-center">Maston Ho</h3>
+                                <p class="w3-center w3-opacity">Analyst, Editor</p>
+                                <p>Maston is a third year computer science student at University of Victoria. He likes to eat a lot. He always say "I don't want to look back and think, because I could've eaten that."</p>
+                            </div>
+                        </div>
+                        <div class="w3-card-4" style = "margin-bottom:30">
+                        <img src="Burnice.jpg" style="padding-left:90px;width:80%; height:250px">
+                            <div style = "height:250px" class="w3-container">
+                                <h3 class = "w3-center">Bernice Brown</h3>
+                                <p class="w3-center w3-opacity">External Relations</p>
+                                <p>Bernice is in her 3rd year of HINF and CSC at the University of Victoria. Some of the courses she has enjoyed taking are: database design, 1800's literature, long-distance yodelling, kick-boxing-for-wimps, and human-computer interaction. Bernice's alternate career path is to tour Canada as a folk fiddler who goes by the name Berbach</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="w3-card-4" style = "margin-bottom:30">
+                        <img src="Jeffrey.jpg" style="padding-left:90px;width:80%; height:250px">
+                            <div style = "height:250px" class="w3-container">
+                                <h3 class = "w3-center">Jeffrey Zhang</h3>
+                                <p class="w3-center w3-opacity">Analyst</p>
+                                <p>Jeffrey is a third year student currently studying Health Information Sciences at the University of Victoria. He enjoys going for morning walks with his dog and test driving Toyota vehicles. He hopes to one day test drive a Honda.</p>
+                            </div>
+                        </div>
+                        <div class="w3-card-4">
+                        <img src="http://pingendo.github.io/pingendo-bootstrap/assets/user_placeholder.png" style="padding-left:90px;width:80%; height:250px">
+                            <div style = "height:250px" class="w3-container">
+                                <h3 class = "w3-center">Graeme Clarke</h3>
+                                <p class="w3-center w3-opacity">Secretary</p>
+                                <p>Graeme is currently studying 3rd-ish/4th-ish Computer Science at Uvic. He briefly attended University of Waterloo and Camosun College before moving to Uvic, and is looking to graduate within the next year. When he's not working on his studies, Graeme likes recording music. He plays guitar, keyboard, drums, and he sings. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="w3-card-4" style = "margin-bottom:30">
+                        <img src="Zane.jpg" style="padding-left:90px;width:80%; height:250px">
+                            <div style = "height:250px" class="w3-container">
+                                <h3 class = "w3-center">Zane Li</h3>
+                                <p class="w3-center w3-opacity">Project Leader</p>
+                                <p>Zane is awesome leader who takes pride eating noodles.He is currently a third year Constantly Seeking Cookies program at Uvic</p>
+                            </div>
+                        </div>
+                        <div class="w3-card-4">
+                        <img src="http://pingendo.github.io/pingendo-bootstrap/assets/user_placeholder.png" style="padding-left:90px;width:80%; height:250px">
+                            <div style = "height:250px" class="w3-container">
+                                <h3 class = "w3-center">Wayne Zhang</h3>
+                                <p class="w3-center w3-opacity">Analyst, Web Developer</p>
+                                Wayne holds a Bachelor's degree from the Computer Science Program at University of Victoria. He has more than 10 years of industry experience with web-based programming and Windows-based application design.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="text-primary">Disclaimer</h1>
+                        <hr class = "style18">
+                        <p class = "w3-xlarge" >This website is not for any commercial use, and only being used for a class project.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+<script>
+$(document).ready(function(){
+  $(document).on('click', 'a', function(event){
+    event.preventDefault();
+    $('html, body').animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top - 50
+    }, 500);
+});
+});
+
+function openDoc(path){
+    window.open(path);
+}
+// Slideshow script
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demodots");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-white";
+}
+
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var dots = document.getElementsByClassName("demodots");
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+   }
+    dots[myIndex-1].className += " w3-white";
+    setTimeout(carousel, 4000); // Change image every 2 seconds
+}
+</script>
+    </body>
 </html>
