@@ -179,6 +179,18 @@ a:after {
 	background-color: #ffffff;
 }
 
+#lightyellow {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	background-color: #f5e67f;
+}
+
+#darkyellow {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	background-color: #f3c669;
+}
+
 
 
 /* Blog Date*/
