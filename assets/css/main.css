@@ -30,7 +30,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
 	font-size: 35px;
 	margin-top: 30px;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 }
 
 
@@ -108,7 +108,7 @@ a:after {
 }
 
 .navbar-brand {
-	font-weight: 900;
+	font-weight: 700;
 	font-size: 20px;
 	letter-spacing: 2px;
 }
