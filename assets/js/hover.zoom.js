@@ -7,9 +7,9 @@
             var defaults = {
                 overlay: true,
                 overlayColor: '#2e9dbd',
-                overlayOpacity: 0.5,
+                overlayOpacity: 0.8,
                 zoom: 25,
-                speed: 300
+                speed: 250
             };
 
             var settings = $.extend(defaults, settings);
