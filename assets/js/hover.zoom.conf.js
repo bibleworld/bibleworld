@@ -31,6 +31,12 @@
                 zoom: 0
             });
 
+            $('.lightyellow').hoverZoom({
+                overlayColor: '#fffbd8',
+                zoom: 1
+            });
+
+
             /* USAGE
 
             $('#pink').hoverZoom({
