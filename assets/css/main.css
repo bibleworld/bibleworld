@@ -239,11 +239,11 @@ bt {
     }
 
 .zoom2 {
-	opacity: 0.8;
+	opacity: 0.5;
 }
 
 .zoom2:hover {
-	opacity: 0.3;
+	opacity: 0.1;
 }
 
 /* glyphicon Configuration */
