@@ -36,6 +36,11 @@
                 zoom: 0
             });
 
+            $('.greyblue').hoverZoom({
+                overlayColor: '#5e85a4',
+                zoom: 0
+            });
+
 
             /* USAGE
 
