@@ -33,7 +33,7 @@
 
             $('.lightyellow').hoverZoom({
                 overlayColor: '#fffbd8',
-                zoom: 1
+                zoom: 0
             });
 
 
